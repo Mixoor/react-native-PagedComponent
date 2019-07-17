@@ -78,7 +78,7 @@ export default class Screen extends Component {
           Animated.timing(this.state.animated, {
             toValue: -newLeft,
             easing: Easing.linear,
-            duration: 2 50
+            duration: 250
           }).start();
         }
       }
@@ -137,10 +137,11 @@ const styles = StyleSheet.create({
   indicator: {
     flexDirection: "row",
     alignItems: "center",
+    justifyContent: "center",
     bottom: 20,
-    left: width / 2 - 30,
     position: "absolute",
-    zIndex: 10000
+    zIndex: 10000,
+    width: "100%"
   },
   dot: {
     width: 15,
