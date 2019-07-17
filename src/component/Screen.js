@@ -86,6 +86,8 @@ export default class Screen extends Component {
   }
 
   render() {
+    const { children } = this.props;
+
     return (
       <View style={styles.container}>
         <Animated.View
@@ -96,7 +98,7 @@ export default class Screen extends Component {
           ]}
           {...this._panResponder.panHandlers}
         >
-          {this.props.children.map((item, index) => {
+          {React.Children.map(children, (item, index) => {
             return (
               <View
                 key={index}

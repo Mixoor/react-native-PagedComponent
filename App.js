@@ -18,10 +18,10 @@ const App = () => {
       <BlueScreen />
       <RedScreen />
       <BlackScreen />
-       <BlueScreen />
+      <BlueScreen />
       <RedScreen />
       <BlackScreen />
-       <BlueScreen />
+      <BlueScreen />
       <RedScreen />
       <BlackScreen />
     </Screen>
